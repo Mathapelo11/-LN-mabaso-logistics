@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* The Luxury Industrial Palette */
+  --color-brand-gold: #C5A059; 
+  --color-brand-black: #0A0A0A;
+  --color-brand-charcoal: #1A1A1A;
+}
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #ffffff;
+}
+
+/* High-impact Logo style from your brand profile */
+.logo-font {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+}

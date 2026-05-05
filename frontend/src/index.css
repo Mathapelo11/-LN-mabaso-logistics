@@ -1,23 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* The Luxury Industrial Palette */
-  --color-brand-gold: #C5A059; 
-  --color-brand-black: #0A0A0A;
-  --color-brand-charcoal: #1A1A1A;
+  --color-brand-gold: #C5A059;
+  --color-brand-black: #000000;
+  --color-brand-border: #333333;
 }
 
 :root {
-  font-family: 'Inter', system-ui, sans-serif;
-  background-color: #ffffff;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
-/* High-impact Logo style from your brand profile */
-.logo-font {
-  font-family: 'Inter', sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -0.05em;
-  line-height: 0.8;
+@layer components {
+  /* Reddot-style Underline Inputs */
+  .blueprint-input {
+    @apply w-full bg-transparent border-b border-[#333333] py-4 text-white 
+           placeholder:text-gray-600 focus:outline-none focus:border-brand-gold 
+           transition-colors uppercase text-sm tracking-widest font-medium;
+  }
+
+  /* High-Contrast Section Headers */
+  .section-header {
+    @apply text-white font-bold uppercase tracking-widest text-xs mb-8 
+           border-b border-[#111111] pb-2 flex items-center gap-4;
+  }
 }

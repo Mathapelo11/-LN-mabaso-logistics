@@ -1,5 +1,4 @@
 import React from 'react';
-// Corrected imports - everything is now used
 import { CheckCircle, Truck, Shield } from 'lucide-react';
 
 const Fleet: React.FC = () => {
